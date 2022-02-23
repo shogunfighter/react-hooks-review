@@ -1,3 +1,9 @@
+
+The tutorial has sections, for each section you need to replace ```src``` folder with the correct section. 
+Just copy and rename your target ```src```.
+
+----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
