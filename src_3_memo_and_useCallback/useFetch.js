@@ -19,17 +19,16 @@ export const useFetch = (url) => {
             let result = await fetch(url);
             // console.log("result:", result);
 
-            // let value = await result.text(); // when dealing with text
-            let value = await result.json(); // when dealing with json
+            let text = await result.text();
             // console.log("text:", text);
 
             // // Add some delay so we can control to toggle and unmount Hello component
             // setTimeout(() => {
-            //     if (isCurrent.current) setState({data: value, loading: false});
+            //     if (isCurrent.current) setState({data: text, loading: false});
             // }, 2000);
 
             // No delay
-            setState({data: value, loading: false});
+            setState({data: text, loading: false});
         };
 
         fn();

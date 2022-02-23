@@ -1,8 +1,8 @@
 import React from "react";
 import { useCountRenders } from "./useCountRenders";
 
-export const Hello = React.memo(({ increment }) => {
+export const Square = React.memo(({ n, increment }) => {
     useCountRenders(); // this is just to console the number of renders
 
-    return <button onClick={() => increment(5)}>hello</button>;
+    return <button onClick={() => increment(n)}>{n}</button>;
 });
